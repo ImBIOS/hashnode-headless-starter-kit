@@ -1,5 +1,5 @@
 {
-	"name": "@starter-kit/blog-personal",
+	"name": "@starter-kit/blog-personal-app-dir",
 	"private": true,
 	"scripts": {
 		"build": "next build",

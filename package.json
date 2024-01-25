@@ -6,7 +6,8 @@
 	"license": "MIT",
 	"author": "",
 	"workspaces": [
-		"packages/*"
+		"packages/*",
+		"themes/*"
 	],
 	"scripts": {
 		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\""

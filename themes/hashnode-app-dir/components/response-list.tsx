@@ -12,9 +12,7 @@ interface Props {
 	currentFilter: string;
 }
 
-const PostComments = dynamic(() =>
-	import('../components/post-comments').then((mod) => mod.PostComments),
-);
+const PostComments = dynamic(() => import('./post-comments').then((mod) => mod.PostComments));
 
 function ResponseList(props: Props) {
 	const { currentFilter } = props;
