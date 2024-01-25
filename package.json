@@ -5,9 +5,11 @@
 	"keywords": [],
 	"license": "MIT",
 	"author": "",
+	"workspaces": [
+		"packages/*"
+	],
 	"scripts": {
-		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\"",
-		"preinstall": "npx only-allow pnpm"
+		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\""
 	},
 	"dependencies": {
 		"classnames": "^2.3.1",
