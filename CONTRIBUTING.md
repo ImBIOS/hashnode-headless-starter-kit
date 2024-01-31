@@ -31,13 +31,13 @@ For the initial start, fork the project and use git clone command to do
 1. `git pull`, before creating a new branch, pull the changes from upstream. Your main branch needs to be up to date.
 
 ```
-$ git pull
+git pull
 ```
 
 2. Create a new branch from `main` like: `feat-adds-profile-section`.<br/>
 
 ```
-$ git checkout -b [name_of_your_new_branch]
+git checkout -b [name_of_your_new_branch]
 ```
 
 3. Work - commit - repeat (make sure you're on the correct branch!)
@@ -45,7 +45,7 @@ $ git checkout -b [name_of_your_new_branch]
 4. Push changes to GitHub.
 
 ```
-$ git push origin [name_of_your_new_branch]
+git push origin [name_of_your_new_branch]
 ```
 
 5. Submit your changes for review
@@ -58,7 +58,7 @@ $ git push origin [name_of_your_new_branch]
 
 ## Setup From Source
 
-To set up a working **development environment**, just fork the project git repository and install the necessary packages with the `pnpm install` command.
+To set up a working **development environment**, just fork the project git repository and install the necessary packages with the `bun install` command.
 
 > If you just want to get started with Headless Hashnode for day-to-day use and not as a contributor, you can refer to the [guide](https://hashnode.com/headless) or the [README](README.md) file.
 
@@ -67,13 +67,16 @@ git clone git@github.com:[YOUR_FORK_HERE]/starter-kit.git
 
 cd starter-kit
 
-pnpm install
+bun install
 
-pnpm run dev
+bun run dev
 ```
-<em> Note- Make sure to run `pnpm run dev` in the correct folder. You can find more instructions about it in the [README]( https://github.com/Hashnode/starter-kit/?tab=readme-ov-file#running-locally)</em>
+
+<em> Note- Make sure to run `bun run dev` in the correct folder. You can find more instructions about it in the [README]( https://github.com/Hashnode/starter-kit/?tab=readme-ov-file#running-locally)</em>
 
 ## Resources
+
 To stay updated with latest updates of Hashnode, you can follow:
+
 - [Changelog](https://hashnode.com/changelog)
 - [Hashnode Discord Server](https://hshno.de/discord)

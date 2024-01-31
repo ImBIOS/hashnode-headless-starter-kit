@@ -10,27 +10,29 @@
 		"themes/*"
 	],
 	"scripts": {
-		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\""
+		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\"",
+		"up": "bunx npm-check-updates --interactive --format group --doctor --doctorTest \"bun run build\" --doctorInstall \"bun install\"",
+		"up-force": "bunx npm-check-updates --interactive --format group"
 	},
 	"dependencies": {
-		"classnames": "^2.3.1",
-		"next": "^13.4.19",
+		"classnames": "^2.5.1",
+		"next": "^14.1.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
-		"@types/node": "^18.0.3",
-		"@types/react": "^18.0.15",
-		"@types/react-dom": "^18.0.6",
-		"prettier": "^3.0.3",
-		"prettier-plugin-organize-imports": "^3.2.3",
-		"prettier-plugin-packagejson": "^2.4.6",
-		"prettier-plugin-tailwindcss": "^0.5.5",
-		"tailwindcss": "^3.3.3",
-		"typescript": "^5.2.2"
+		"@types/node": "^20.11.13",
+		"@types/react": "^18.2.48",
+		"@types/react-dom": "^18.2.18",
+		"prettier": "^3.2.4",
+		"prettier-plugin-organize-imports": "^3.2.4",
+		"prettier-plugin-packagejson": "^2.4.10",
+		"prettier-plugin-tailwindcss": "^0.5.11",
+		"tailwindcss": "^3.4.1",
+		"typescript": "^5.3.3"
 	},
 	"engines": {
-		"node": ">=18.0.0",
-		"pnpm": ">=8.0.0"
+		"bun": ">=1.0.0",
+		"node": ">=18.0.0"
 	}
 }

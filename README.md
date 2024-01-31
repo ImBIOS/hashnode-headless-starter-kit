@@ -107,7 +107,7 @@ async function handleRequest(request) {
 
   if (url.pathname.startsWith(subpath)) {
     // Proxy blog requests
-    return proxyBlog(request) 
+    return proxyBlog(request)
   } else {
     // Passthrough everything else
     return fetch(request)
@@ -123,7 +123,6 @@ async function proxyBlog(request) {
   return fetch(`${blogBaseUrl}${path}`, request)
 }
 ```
-
 
 Be sure to replace the values of `subpath` and `blogBaseUrl` in the above code snippet. This way cloudflare will proxy all the requests starting with `yourdomain.com/blog` to your headless blog, and other requests will hit your origin as usual.
 
@@ -145,10 +144,10 @@ Congrats 🎉! Hashnode will now treat your blog as a headless blog and send rea
 
 - cd into either `packages/blog-starter-kit/themes/enterprise`, or `packages/blog-starter-kit/themes/hashnode` or `packages/blog-starter-kit/themes/personal`
 - Copy `.env.example` to `.env.local`
-- `pnpm install`
-- `pnpm dev`
+- `bun install`
+- `bun dev`
 
-Visit http://localhost:3000!
+Visit <http://localhost:3000>!
 
 ## APIs
 
